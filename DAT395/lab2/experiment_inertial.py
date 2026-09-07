@@ -1,4 +1,5 @@
-from lab2.view import *
+from DAT395.lab2.model import Particle, Vec
+from DAT395.lab2.view import *
 import math
 
 n = 20

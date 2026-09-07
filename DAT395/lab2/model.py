@@ -45,12 +45,16 @@ class Particle():
     def apply_force(self, dt, f):
         self.velocity = self.velocity + dt/self.mass * f
 
-##########################################
-### NB. Tasks 7–8 are done in view.py. ###
-##########################################
-
 
 # Task (9/12): In the Particle class, add a method bounding_box(self)
+    def bounding_box(self):
+        top_left = Vec(self.position.x - self.radius, self.position.y + self.radius)
+        bot_right = Vec(self.position.x + self.radius, self.position.y - self.radius)
+        return top_left, bot_right
+
+
+
+
 
 
 

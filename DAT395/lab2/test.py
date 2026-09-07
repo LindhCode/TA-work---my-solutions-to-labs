@@ -16,7 +16,7 @@ def print_statistics(failing_method_or_class=""):
 
     print()
     if pass_tests:
-       print(f"{GREEN} ✅ {pass_tests} out of {all_tests} passed.{END}")
+        print(f"{GREEN} ✅ {pass_tests} out of {all_tests} passed.{END}")
     if fail_tests:
         print(f"{RED} ❌ {fail_tests} out of {all_tests} failed.{END}")
         if failing_method_or_class:
@@ -179,13 +179,13 @@ def test_and_print_issues_with_dunder_methods(method, method_name, verbose=True)
 
 def _load_modules():
     try:
-        import model
+        import DAT395.lab2.model as model
     except:
         print("The file model.py not found, or it contains syntax errors.")
         model = None
 
     try:
-        import view
+        import DAT395.lab2.view as view
     except:
         print("The file view.py not found, or it contains syntax errors.")
         view = None
