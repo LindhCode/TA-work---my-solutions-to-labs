@@ -54,13 +54,6 @@ class Particle():
 
 
 
-
-
-
-
-
-
-
 ###########################################
 ### When you're done with all 12 tasks: ###
 ### forces/other features in this file! ###

@@ -179,13 +179,13 @@ def test_and_print_issues_with_dunder_methods(method, method_name, verbose=True)
 
 def _load_modules():
     try:
-        import DAT395.lab2.model as model
+        import model as model
     except:
         print("The file model.py not found, or it contains syntax errors.")
         model = None
 
     try:
-        import DAT395.lab2.view as view
+        import view as view
     except:
         print("The file view.py not found, or it contains syntax errors.")
         view = None
